@@ -1,3 +1,4 @@
+from flaskr.db import init_db_command
 import os
 
 from flask import Flask
@@ -37,6 +38,9 @@ def create_app(test_config=None):
     from . import blog
     app.register_blueprint(blog.bp)
     app.add_url_rule('/', endpoint='index')
+
+    from .import test
+    app.register_blueprint(test.bp)
 
     return app
 
