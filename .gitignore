@@ -1,3 +1,5 @@
+ProdConfig.py
+
 .DS_Store
 .env
 .flaskenv
@@ -29,3 +31,5 @@ __pycache__/
 
 instance/
 
+
+*.sqlite
